@@ -1,9 +1,23 @@
-﻿# This runs before upgrade or uninstall.
-# Use this file to do things like stop services prior to upgrade or uninstall.
-# NOTE: It is an anti-pattern to call chocolateyUninstall.ps1 from here. If you
-#  need to uninstall an MSI prior to upgrade, put the functionality in this
-#  file without calling the uninstall script. Make it idempotent in the
-#  uninstall script so that it doesn't fail when it is already uninstalled.
-# NOTE: For upgrades - like the uninstall script, this script always runs from
-#  the currently installed version, not from the new upgraded package version.
+﻿$ErrorActionPreference = 'Stop'
 
+$processName = 'ISx'
+$processes = Get-Process -Name $processName -ErrorAction SilentlyContinue
+if ($processes) {
+    Write-Warning "$processName is currently running, stopping it to prevent upgrade/uninstall from failing..."
+
+    foreach ($process in $processes) {
+        Stop-Process -InputObject $process -ErrorAction SilentlyContinue
+        Start-Sleep -Seconds 3
+    }
+
+    $processes = Get-Process -Name $processName -ErrorAction SilentlyContinue
+    if ($processes) {
+        Write-Warning "$processName is still running despite stop request, force stopping it..."
+        $processes | Stop-Process -Force -ErrorAction SilentlyContinue
+    }
+
+    Write-Warning "If upgrading, $processName may need to be manually restarted upon completion"
+}
+else {
+    Write-Debug "No running $processName processes instances were found"
+}
