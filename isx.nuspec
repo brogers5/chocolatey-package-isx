@@ -47,7 +47,7 @@ ISx is intended to serve as an open-source alternative to `IsXunpack`.
 ISx.exe "D:\Local\setup.exe"
 ```
 ]]></description>
-    <!-- <releaseNotes>No published release notes document - infer from commit history</releaseNotes> -->
+    <releaseNotes>https://github.com/lifenjoiner/ISx/releases/tag/v0.3.8</releaseNotes>
   </metadata>
   <files>
     <file src="legal\LICENSE.txt" target="legal" />

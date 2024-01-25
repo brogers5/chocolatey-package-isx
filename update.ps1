@@ -28,6 +28,7 @@ function global:au_SearchReplace {
             "(<licenseUrl>)[^<]*(</licenseUrl>)"             = "`$1https://github.com/$softwareRepo/blob/v$($Latest.SoftwareVersion)/LICENSE`$2"
             "(<projectSourceUrl>)[^<]*(</projectSourceUrl>)" = "`$1https://github.com/$softwareRepo/tree/v$($Latest.SoftwareVersion)`$2"
             "(<docsUrl>)[^<]*(</docsUrl>)"                   = "`$1https://github.com/$softwareRepo/blob/v$($Latest.SoftwareVersion)/readme.txt`$2"
+            '(<releaseNotes>)[^<]*(</releaseNotes>)'         = "`$1https://github.com/$($softwareRepo)/releases/tag/v$($Latest.SoftwareVersion)`$2"
         }
         'legal\VERIFICATION.txt'        = @{
             '%checksumValue%'  = "$($Latest.Checksum32)"
