@@ -3,18 +3,18 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>isx</id>
-    <version>0.3.7</version>
-    <packageSourceUrl>https://github.com/brogers5/chocolatey-package-isx/tree/v0.3.7</packageSourceUrl>
+    <version>0.3.8</version>
+    <packageSourceUrl>https://github.com/brogers5/chocolatey-package-isx/tree/v0.3.8</packageSourceUrl>
     <owners>sublym0nal</owners>
     <title>ISx</title>
     <authors>lifenjoiner</authors>
     <projectUrl>https://github.com/lifenjoiner/ISx</projectUrl>
     <!--<iconUrl>No icon is used/available for this program</iconUrl>-->
     <copyright>Copyright (c) 2017 lifenjoiner</copyright>
-    <licenseUrl>https://github.com/lifenjoiner/ISx/blob/v0.3.7/LICENSE</licenseUrl>
+    <licenseUrl>https://github.com/lifenjoiner/ISx/blob/v0.3.8/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <projectSourceUrl>https://github.com/lifenjoiner/ISx/tree/v0.3.7</projectSourceUrl>
-    <docsUrl>https://github.com/lifenjoiner/ISx/blob/v0.3.7/readme.txt</docsUrl>
+    <projectSourceUrl>https://github.com/lifenjoiner/ISx/tree/v0.3.8</projectSourceUrl>
+    <docsUrl>https://github.com/lifenjoiner/ISx/blob/v0.3.8/readme.txt</docsUrl>
     <!--<mailingListUrl>No forum/email list exists</mailingListUrl>-->
     <bugTrackerUrl>https://github.com/lifenjoiner/ISx/issues</bugTrackerUrl>
     <tags>isx installshield installer extractor extraction portable foss</tags>
@@ -46,7 +46,7 @@ ISx is intended to serve as an open-source alternative to `IsXunpack`.
 ```shell
 ISx.exe "D:\Local\setup.exe"
 ```
-]]>    </description>
+]]></description>
     <!-- <releaseNotes>No published release notes document - infer from commit history</releaseNotes> -->
   </metadata>
   <files>
