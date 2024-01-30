@@ -1,12 +1,3 @@
-
----
-
-### [choco://isx](choco://isx)
-
-To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support](https://community.chocolatey.org/packages/choco-protocol-support)
-
----
-
 ## ISx
 
 ISx is a simple file extractor that extracts all components of a given InstallShield installer executable, including (but not limited to):
