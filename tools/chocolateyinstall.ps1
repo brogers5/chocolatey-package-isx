@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$archiveFileName = 'ISx-v0.3.8-win32.7z'
+$archiveFileName = 'ISx-v0.3.9-win32.7z'
 $archiveFilePath = Join-Path -Path $toolsDir -ChildPath $archiveFileName
 
 $packageArgs = @{
