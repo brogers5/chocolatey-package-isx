@@ -1,6 +1,6 @@
 ﻿Import-Module PowerShellForGitHub
 
-$installerFileNameRegex = 'ISx-v([\d\.]+)-win32\.7z$'
+$archiveFileNameRegex = 'ISx-v([\d\.]+)\.7z$'
 $owner = 'lifenjoiner'
 $repository = 'ISx'
 
@@ -22,17 +22,17 @@ function Get-SoftwareUri([Version] $Version) {
 
     $windowsPortableArchiveAsset = $null
     foreach ($asset in $releaseAssets) {
-        if ($asset.name -match $installerFileNameRegex) {
+        if ($asset.name -match $archiveFileNameRegex) {
             $windowsPortableArchiveAsset = $asset
-            break;
+            break
         }
         else {
-            continue;
+            continue
         }
     }
 
     if ($null -eq $windowsPortableArchiveAsset) {
-        throw "Cannot find published Windows portable archive asset!"
+        throw 'Cannot find published Windows portable archive asset!'
     }
 
     return $windowsPortableArchiveAsset.browser_download_url
