@@ -5,14 +5,14 @@ in verifying that this package's contents are trustworthy.
 The packaged Windows portable archive is available for independent download via the
 Releases page on ISx's GitHub repository. A download link for the packaged version
 is included at the following URL:
-https://github.com/lifenjoiner/ISx/releases/tag/v0.3.9
+https://github.com/lifenjoiner/ISx/releases/tag/v0.3.10
 
 For convenience, this is a direct URL to the relevant asset:
-https://github.com/lifenjoiner/ISx/releases/download/v0.3.9/ISx-v0.3.9-win32.7z
+https://github.com/lifenjoiner/ISx/releases/download/v0.3.10/ISx-v0.3.10.7z
 
 The following PowerShell command will print a calculated SHA256 hash:
 
-    (Get-FileHash -Path ISx-v0.3.9-win32.7z -Algorithm SHA256).Hash
+    (Get-FileHash -Path ISx-v0.3.10.7z -Algorithm SHA256).Hash
 
 This command should be executed against an independently downloaded archive, as well
 as the copy distributed with the package. Both hash values should be identical. A
@@ -20,4 +20,4 @@ matching hash value should confirm that no corruption or tampering has occurred
 during this package's generation process.
 
 For reference, the following SHA256 hash was calculated during the package's automated creation:
-31F2BF585118A597D7129BD44235A602C285772984D9CC146F6F5023457B14F9
+4AD0A19B986799C7454EFAF7EDD12B777800ACF066B6CA49C73F961F11FAF797
