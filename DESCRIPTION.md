@@ -24,11 +24,5 @@ The packaged archive ships with both x86 (32-bit) and amd64 (64-bit) binaries, b
 |Parameter|Environment Applicability|Description|
 |-|-|-|
 |`/ShimWithPlatform`|All environments|Creates a second shim with an explicit platform name (i.e. `ISx-x86` and/or `ISX-amd64`). Use if you require disambiguation for your commands/scripts.|
-|`/SkipLegacyShim`|32-bit only[^1]|For backward compatibility with legacy use cases depending on the x86 binary, the `ISx` shim will target the x86 binary instead. Use if this shim is undesired or unnecessary.[^2] |
-|`/ShimAllBinaries`|64-bit only|Use if you require both binaries to be shimmed.[^3]|
-
-[^1]: 64-bit environments can force package behavior for 32-bit environments with the `--forcex86` switch.
-
-[^2]: Usage implies `/ShimWithPlatform`, as no shim would otherwise be created if omitted.
-
-[^3]: For naming consistency with the x86 binary, consider combining with `/ShimWithPlatform`.
+|`/SkipLegacyShim`|32-bit only (forceable in 64-bit with `--forcex86` switch)|For backward compatibility with legacy use cases depending on the x86 binary, the `ISx` shim will target the x86 binary instead. Use if this shim is undesired or unnecessary. Usage implies `/ShimWithPlatform`, as no shim would otherwise be created if omitted.|
+|`/ShimAllBinaries`|64-bit only|Use if you require both binaries to be shimmed. For naming consistency with the x86 binary, consider combining with `/ShimWithPlatform`.|
