@@ -1,4 +1,4 @@
-From: https://raw.githubusercontent.com/lifenjoiner/ISx/v0.3.10/LICENSE
+From: https://raw.githubusercontent.com/lifenjoiner/ISx/v0.3.11/LICENSE
 
 MIT License
 

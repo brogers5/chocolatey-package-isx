@@ -3,18 +3,18 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>isx</id>
-    <version>0.3.10</version>
-    <packageSourceUrl>https://github.com/brogers5/chocolatey-package-isx/tree/v0.3.10</packageSourceUrl>
+    <version>0.3.11</version>
+    <packageSourceUrl>https://github.com/brogers5/chocolatey-package-isx/tree/v0.3.11</packageSourceUrl>
     <owners>sublym0nal</owners>
     <title>ISx</title>
     <authors>lifenjoiner</authors>
     <projectUrl>https://github.com/lifenjoiner/ISx</projectUrl>
     <!--<iconUrl>No icon is used/available for this program</iconUrl>-->
     <copyright>Copyright (c) 2017 lifenjoiner</copyright>
-    <licenseUrl>https://github.com/lifenjoiner/ISx/blob/v0.3.10/LICENSE</licenseUrl>
+    <licenseUrl>https://github.com/lifenjoiner/ISx/blob/v0.3.11/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <projectSourceUrl>https://github.com/lifenjoiner/ISx/tree/v0.3.10</projectSourceUrl>
-    <docsUrl>https://github.com/lifenjoiner/ISx/blob/v0.3.10/readme.txt</docsUrl>
+    <projectSourceUrl>https://github.com/lifenjoiner/ISx/tree/v0.3.11</projectSourceUrl>
+    <docsUrl>https://github.com/lifenjoiner/ISx/blob/v0.3.11/readme.txt</docsUrl>
     <!--<mailingListUrl>No forum/email list exists</mailingListUrl>-->
     <bugTrackerUrl>https://github.com/lifenjoiner/ISx/issues</bugTrackerUrl>
     <tags>isx installshield installer extractor extraction portable foss</tags>
@@ -48,7 +48,7 @@ The packaged archive ships with both x86 (32-bit) and amd64 (64-bit) binaries, b
 |`/SkipLegacyShim`|32-bit only (forceable in 64-bit with `--forcex86` switch)|For backward compatibility with legacy use cases depending on the x86 binary, the `ISx` shim will target the x86 binary instead. Use if this shim is undesired or unnecessary. Usage implies `/ShimWithPlatform`, as no shim would otherwise be created if omitted.|
 |`/ShimAllBinaries`|64-bit only|Use if you require both binaries to be shimmed. For naming consistency with the x86 binary, consider combining with `/ShimWithPlatform`.|
 ]]></description>
-    <releaseNotes>https://github.com/lifenjoiner/ISx/releases/tag/v0.3.10</releaseNotes>
+    <releaseNotes>https://github.com/lifenjoiner/ISx/releases/tag/v0.3.11</releaseNotes>
   </metadata>
   <files>
     <file src="legal\LICENSE.txt" target="legal" />
