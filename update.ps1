@@ -24,10 +24,10 @@ function global:au_AfterUpdate($Package) {
 function global:au_SearchReplace {
     @{
         "$($Latest.PackageName).nuspec" = @{
-            "(<packageSourceUrl>)[^<]*(</packageSourceUrl>)" = "`$1https://github.com/brogers5/chocolatey-package-$($Latest.PackageName)/tree/v$($Latest.Version)`$2"
-            "(<licenseUrl>)[^<]*(</licenseUrl>)"             = "`$1https://github.com/$softwareRepo/blob/v$($Latest.SoftwareVersion)/LICENSE`$2"
-            "(<projectSourceUrl>)[^<]*(</projectSourceUrl>)" = "`$1https://github.com/$softwareRepo/tree/v$($Latest.SoftwareVersion)`$2"
-            "(<docsUrl>)[^<]*(</docsUrl>)"                   = "`$1https://github.com/$softwareRepo/blob/v$($Latest.SoftwareVersion)/readme.txt`$2"
+            '(<packageSourceUrl>)[^<]*(</packageSourceUrl>)' = "`$1https://github.com/brogers5/chocolatey-package-$($Latest.PackageName)/tree/v$($Latest.Version)`$2"
+            '(<licenseUrl>)[^<]*(</licenseUrl>)'             = "`$1https://github.com/$softwareRepo/blob/v$($Latest.SoftwareVersion)/LICENSE`$2"
+            '(<projectSourceUrl>)[^<]*(</projectSourceUrl>)' = "`$1https://github.com/$softwareRepo/tree/v$($Latest.SoftwareVersion)`$2"
+            '(<docsUrl>)[^<]*(</docsUrl>)'                   = "`$1https://github.com/$softwareRepo/blob/v$($Latest.SoftwareVersion)/readme.txt`$2"
             '(<releaseNotes>)[^<]*(</releaseNotes>)'         = "`$1https://github.com/$($softwareRepo)/releases/tag/v$($Latest.SoftwareVersion)`$2"
         }
         'legal\VERIFICATION.txt'        = @{
