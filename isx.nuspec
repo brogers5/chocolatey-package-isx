@@ -32,10 +32,11 @@ ISx is a simple file extractor that extracts all components of a given InstallSh
 
 ISx is intended to serve as an open-source alternative to `IsXunpack`.
 
-### Usage Example
+### Usage Examples
 
 ```shell
 ISx.exe "D:\Local\setup.exe"
+ISX.exe "D:\Local\setup.exe" "D:\Local\Installer"
 ```
 
 ## Package Parameters
